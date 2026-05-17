@@ -219,3 +219,6 @@ __marimo__/
 
 # AI
 .context/
+
+# project specific
+videos/

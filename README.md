@@ -44,6 +44,16 @@ The daemon auto-launches on TTY1 via `.zshrc`. A physical USB controller is plan
 - `python3`
 - `fonts-terminus` (`sudo apt install fonts-terminus`)
 
-## Status
+## Deploy
 
-Design phase. See [.context/cyberdeck-tv-design.md](.context/cyberdeck-tv-design.md) for the full design doc, KMS/OSD findings, and open questions.
+Scripts live in `bin/` and deploy to `~/bin/` on the Pi:
+
+```bash
+scp bin/tv.sh pi:~/bin/tv.sh
+```
+
+Then launch:
+
+```bash
+ssh pi '~/bin/tv.sh'
+```
